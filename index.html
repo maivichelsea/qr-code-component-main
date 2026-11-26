@@ -16,17 +16,17 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-      .attribution {
-        font-size: 0.6875rem;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-
       * {
         margin: 0;
         box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background-color: #d5e1ef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-family:
           "Outfit",
           system-ui,
@@ -42,15 +42,6 @@
           sans-serif;
       }
 
-      body {
-        width: 100vw;
-        height: 100vh;
-        background-color: #d5e1ef;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
       main {
         display: flex;
         justify-content: center;
@@ -59,19 +50,19 @@
       }
 
       .card {
+        width: 380px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 12px;
-        width: 80%;
-        padding: 15px 8px 30px 10px;
+        max-width: 80%;
+        padding: 15px 12px 40px 12px;
         border-radius: 12px;
         background-color: #fff;
       }
 
       .card img {
-        width: 95%;
+        width: 100%;
         border-radius: 12px;
       }
 
@@ -90,28 +81,20 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
-        width: 85%;
+        max-width: 85%;
       }
     </style>
   </head>
   <body>
-    <header></header>
-
     <main>
       <article class="card">
-        <div>
-          <img src="/images/image-qr-code.png" alt="QR Code" />
-        </div>
+        <img src="/images/image-qr-code.png" alt="QR Code" />
         <div class="flex-text">
-          <div class="text">
-            <h1>Improve your front-end skills by building projects</h1>
-          </div>
-          <div class="text">
-            <p>
-              Scan the QR code to visit Frontend Mentor and take your coding
-              skills to the next level
-            </p>
-          </div>
+          <h1>Improve your front-end skills by building projects</h1>
+          <p>
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
         </div>
       </article>
     </main>
